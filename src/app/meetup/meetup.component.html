@@ -1,0 +1,26 @@
+<mat-card class="item" *ngIf="meetup" (dblclick)="meetupSelected.emit(meetup)">    
+    <div class="meetup-header">
+      <h2>{{ meetup.name }}</h2>
+      <span class="meetup-type" *ngIf="meetup.isTrip">Viaje</span>
+    </div>
+    <p>
+      {{ meetup.description }}
+    </p>
+    <p *ngIf="meetup.isTrip">
+      <mat-icon>event</mat-icon>
+      {{ meetup.startDate | date:'dd/MM/yyyy' }} - {{ meetup.endDate | date:'dd/MM/yyyy' }}
+    </p>
+    <p *ngIf="!meetup.isTrip">
+      <mat-icon>event</mat-icon>
+      {{ meetup.startDate | date:'dd/MM/yyyy' }}
+    </p>
+    <p>
+      <mat-icon>location_on</mat-icon> {{ meetup.location }}
+    </p>
+    <button mat-icon-button color="warn" (click)="meetupDeleted.emit(meetup)">
+        <mat-icon>delete</mat-icon>
+    </button>
+</mat-card>
+<mat-card class="item" *ngIf="!meetup">
+    <p>No hay citas programadas</p>
+</mat-card>

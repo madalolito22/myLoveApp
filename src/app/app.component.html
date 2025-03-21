@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">
+  <mat-icon>favorite</mat-icon>
+  <span>MyLoveApp</span>
+</mat-toolbar>
+<app-meetup *ngFor="let meetup of meetups" [meetup]="meetup" (meetupDeleted)="onMeetupDeleted($event)"></app-meetup>

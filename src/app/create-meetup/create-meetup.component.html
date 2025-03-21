@@ -1,0 +1,30 @@
+<form [formGroup]="meetupForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput formControlName="name" placeholder="Name" required>
+    <mat-error *ngIf="meetupForm.get('name')?.touched && meetupForm.get('name')?.hasError('required')">
+      Name is required
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Similar validation for other fields -->
+
+  <app-location-picker 
+    formControlName="location"
+    [location]="meetupForm.get('location')?.value"
+    (locationChange)="onLocationChange($event)"
+    (photoUrlChange)="onPhotoUrlChange($event)">
+  </app-location-picker>
+
+  <!-- Add loading and photo display -->
+  <div class="location-photo-container">
+    <mat-spinner *ngIf="isLoadingPhoto" diameter="40"></mat-spinner>
+    
+    <div *ngIf="locationPhotoUrl" class="location-photo" [@fadeIn]>
+      <img [src]="locationPhotoUrl" alt="Location photo" (load)="isLoadingPhoto = false">
+    </div>
+  </div>
+
+  <button mat-raised-button color="primary" type="submit">
+    Create Meetup
+  </button>
+</form> 
