@@ -1,6 +1,6 @@
 {
   "routes": {
-    "/myLoveApp": {},
-    "/myLoveApp/calendar": {}
+    "/": {},
+    "/calendar": {}
   }
 }
