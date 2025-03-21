@@ -7,24 +7,24 @@ export default {
   routes: [
   {
     "renderMode": 2,
-    "route": "/"
+    "route": "/myLoveApp"
   },
   {
     "renderMode": 2,
-    "route": "/calendar"
+    "route": "/myLoveApp/calendar"
   },
   {
     "renderMode": 2,
-    "redirectTo": "/",
-    "route": "/**"
+    "redirectTo": "/myLoveApp",
+    "route": "/myLoveApp/**"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 39493, hash: 'eeee59afde6dcc832c5ffa005ef66c341d19aaabc0c8a634859326b8ce9cd24b', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 33047, hash: 'e3cd5185636638359fd825f42acfb9470ae568a8b14cc47e8fde1bf25ecd45a4', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'calendar/index.html': {size: 103945, hash: '7de0a3e6ebbd28548c33c15f3e78570268a3ed93b048e7ca408ee5bbc9c76fd1', text: () => import('./assets-chunks/calendar_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 52164, hash: 'ba2394e176750a5a4af4928947e88b095c726a2bbad962166a207f9cda087d5e', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 39503, hash: 'a508e8594448186f4fd5e88d32797c3a2eb64e2672f69aab85aed6cf59a212e0', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 33057, hash: '4559254d3215d4d96167a63f5291fd93277ef62315776b2b25cb8bf3068e3c03', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'myLoveApp/index.html': {size: 52174, hash: 'f90ff78c25bcc1faa9dbec0007919e977cae80d16afafe22119fc705578c4b43', text: () => import('./assets-chunks/myLoveApp_index_html.mjs').then(m => m.default)},
+    'myLoveApp/calendar/index.html': {size: 103955, hash: '62dd8161ad196f9c3c1b7b470747be32201620ef4dcc2c5f6240f42c8dc0d270', text: () => import('./assets-chunks/myLoveApp_calendar_index_html.mjs').then(m => m.default)},
     'styles-KSGJMKDI.css': {size: 11028, hash: 'xkNZEM2rl/E', text: () => import('./assets-chunks/styles-KSGJMKDI_css.mjs').then(m => m.default)}
   },
 };
