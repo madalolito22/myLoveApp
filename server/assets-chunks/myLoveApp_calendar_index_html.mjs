@@ -22,6 +22,8 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head><li
 </span><span class="mat-calendar-body-hidden-label" id="mat-calendar-body-comparison-start-0"> Comparison range 
 </span><span class="mat-calendar-body-hidden-label" id="mat-calendar-body-comparison-end-0"> Comparison range 
 </span></tbody></table></mat-month-view><!----><!----><!----></div></mat-calendar></mat-card-content></mat-card><!----></div></app-calendar><!----></app-root>
+  <script src="polyfills.js"></script>
+  <script src="main.js"></script>
 <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-ZXEWYNB6.js" type="module"></script>
 
 </body></html>`;
