@@ -21,10 +21,10 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 39576, hash: '12d88c35b221751c356027a824cd9db188a2d7db1bb9e20ecdb586f41e9a7db4', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 33130, hash: '67c1ad2a115a71af54165c361ce64482907a1672072aa5c56981efd64213a3e0', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'myLoveApp/index.html': {size: 52247, hash: 'ef8f8391d7b24807923ad851709281e230d6158a3d631698aaaba58b9f386651', text: () => import('./assets-chunks/myLoveApp_index_html.mjs').then(m => m.default)},
-    'myLoveApp/calendar/index.html': {size: 104028, hash: '4b2d1e02534dd5043fffab64cf83dcc22935e68ffce1cb6952d2d46b532f47e8', text: () => import('./assets-chunks/myLoveApp_calendar_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 39585, hash: 'df89ce3fb3841d8ea3129f7043e6bd106ba08b6cb84987de2572a191cd86ffbb', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 33139, hash: 'e00d63da61c648b7ca5bb5c3fb56e75950e4bd1a07862cfdfdc74cb1134ab924', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'myLoveApp/index.html': {size: 52253, hash: 'be3c558cdb5ac74f1935784a7ee39e451d8df1045daba8b4cf336a07b86a2099', text: () => import('./assets-chunks/myLoveApp_index_html.mjs').then(m => m.default)},
+    'myLoveApp/calendar/index.html': {size: 104034, hash: 'f1bce2efed9691fcfb342e31af9d536a3527c4aa6a18cd8b97ed30d51c7128db', text: () => import('./assets-chunks/myLoveApp_calendar_index_html.mjs').then(m => m.default)},
     'styles-KSGJMKDI.css': {size: 11028, hash: 'xkNZEM2rl/E', text: () => import('./assets-chunks/styles-KSGJMKDI_css.mjs').then(m => m.default)}
   },
 };
